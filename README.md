@@ -81,5 +81,7 @@ A simple real-time chat app written in Golang and React.
   npm start
   ```
 
+![Screenshot_2](https://user-images.githubusercontent.com/57584831/149803341-46ed34dc-7a9e-4041-92dd-7a7e1330442a.png)
+
 # reference
 - [Building a Chat Application in Go with ReactJS](https://tutorialedge.net/projects/chat-system-in-go-and-react/)
