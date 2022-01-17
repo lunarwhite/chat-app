@@ -1,8 +1,8 @@
 var socket = new WebSocket("ws://localhost:8080/ws");
 
 // proceed to print out issues to the browser console.
-let connect = () => {
-  console.log("Attempting Connection...");
+let connect = cb => {
+  console.log("connecting");
 
   socket.onopen = () => {
     console.log("Successfully Connected");
@@ -10,6 +10,9 @@ let connect = () => {
 
   socket.onmessage = msg => {
     console.log(msg);
+
+    // callback whenever receive our message.
+    cb(msg);
   };
 
   socket.onclose = event => {
