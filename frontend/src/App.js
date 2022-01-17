@@ -5,8 +5,6 @@ import './App.css';
 import { connect, sendMsg } from "./api";
 
 class App extends Component {
-
-  // add the call to connect().
   constructor(props) {
     super(props);
     this.state = {
@@ -24,18 +22,20 @@ class App extends Component {
     });
   }
 
-  send() {
-    console.log("hello");
-    sendMsg("hello");
+  // take in the context for the event that triggered it.
+  send(event) {
+    if (event.keyCode === 13) {
+      sendMsg(event.target.value);
+      event.target.value = "";
+    }
   }
 
-  // create a <button/> element which triggers thr sendMsg() function.
   render() {
     return (
       <div className="App">
         <Header />
         <ChatHistory chatHistory={this.state.chatHistory} />
-        <button onClick={this.send}>Hit</button>
+        <ChatInput send={this.send} />
       </div>
     );
   }
