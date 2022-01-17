@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Header from './components/Header/Header';
+import ChatHistory from './components/ChatHistory/ChatHistory';
 import './App.css';
 import { connect, sendMsg } from "./api";
 
