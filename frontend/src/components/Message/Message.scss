@@ -1,8 +1,9 @@
 .Message {
+  width: 80%;
   display: block;
-  background-color: white;
+  background-color: lightgrey;
   margin: 10px auto;
-  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   border-radius: 5px;
   clear: both;
@@ -10,6 +11,6 @@
   &.me {
     color: white;
     float: right;
-    background-color: #328ec4;
+    background-color: lightyellow;
   }
 }
