@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./ChatHistory.scss";
+import Message from '../Message/Message';
 
 class ChatHistory extends Component {
   // take in an array of chat messages from our App.js function
