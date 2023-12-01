@@ -38,11 +38,11 @@ A simple real-time chat app written in Golang and React.
         └── setupTests.js
 ```
 
-# setup envs
+## setup envs
 - golang
 - npm & npx & node-sass
 
-# build steps
+## build steps
 - part1: env setup
   - init backend with golang
   - init frontend with react
@@ -65,7 +65,7 @@ A simple real-time chat app written in Golang and React.
   - build our Docker image
   - run Docker to deploy
 
-# run & deploy
+## run & deploy
 - backend
   ```shell
   # in folder backend/
@@ -83,5 +83,5 @@ A simple real-time chat app written in Golang and React.
 
 ![Screenshot_2](https://user-images.githubusercontent.com/57584831/149803341-46ed34dc-7a9e-4041-92dd-7a7e1330442a.png)
 
-# reference
+## reference
 - [Building a Chat Application in Go with ReactJS](https://tutorialedge.net/projects/chat-system-in-go-and-react/)
